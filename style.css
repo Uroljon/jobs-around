@@ -83,6 +83,10 @@ nav a {
   background-size: cover;
   display: none;
 }
+#main .main-wrapper .main-right .component-content .images {
+  width: 100%;
+  padding: 10px 0;
+}
 #main .main-wrapper .main-right .component-content .component-heading {
   font-size: 2rem;
   margin: 10px 0;
@@ -130,6 +134,7 @@ nav a {
 }
 .accordion .accordion-item .accordion-body {
   overflow: hidden;
+  overflow-y: auto;
   transition: max-height 0.3s ease-out;
   max-height: 0;
 }
