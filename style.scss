@@ -127,6 +127,7 @@ nav {
                     margin: 5px 5px 0 0;
                     img {
                         height: 80px;
+                        vertical-align: middle;
                     }
                 }
             }
@@ -137,6 +138,7 @@ nav {
                 border-left: 3px solid #5bc0de;
             }
             .alumni-wrapper{
+                width: 100%;
                 display: grid;
                 grid-template-columns: 50% 50%;
                 // gap: 15px;

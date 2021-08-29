@@ -115,6 +115,7 @@ nav a {
 }
 #main .main-wrapper .main-right .component-content .description a img {
   height: 80px;
+  vertical-align: middle;
 }
 #main .main-wrapper .main-right .component-content .note {
   padding: 10px;
@@ -123,6 +124,7 @@ nav a {
   border-left: 3px solid #5bc0de;
 }
 #main .main-wrapper .main-right .component-content .alumni-wrapper {
+  width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
 }
