@@ -122,6 +122,27 @@ nav a {
   border: 1px solid #e9ecef;
   border-left: 3px solid #5bc0de;
 }
+#main .main-wrapper .main-right .component-content .alumni-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#main .main-wrapper .main-right .component-content .alumni-wrapper .picture {
+  padding: 10px 0;
+}
+#main .main-wrapper .main-right .component-content .alumni-wrapper .picture img {
+  height: 300px;
+  width: 100%;
+}
+#main .main-wrapper .main-right .component-content .alumni-wrapper .alumni-info {
+  padding: 10px 15px;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#main .main-wrapper .main-right .component-content .alumni-wrapper .alumni-info a {
+  display: inline-block;
+}
 
 .accordion .accordion-item .accordion-item-toggler {
   font-size: initial;
@@ -274,11 +295,17 @@ nav a {
   #main .main-wrapper .main-right .component-content .description a img {
     height: 80px;
   }
-  #main .main-wrapper .main-right .component-content .note {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #e9ecef;
-    border-left: 3px solid #5bc0de;
+  #main .main-wrapper .main-right .component-content .alumni-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  #main .main-wrapper .main-right .component-content .alumni-wrapper .picture img {
+    height: 300px;
+    width: 100%;
+  }
+  #main .main-wrapper .main-right .component-content .alumni-wrapper .alumni-info {
+    padding: 10px 15px 10px 15px;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 768px) {

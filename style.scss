@@ -136,6 +136,28 @@ nav {
                 border: 1px solid #e9ecef;
                 border-left: 3px solid #5bc0de;
             }
+            .alumni-wrapper{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                // gap: 15px;
+                .picture{
+                    padding: 10px 0;
+                    img{
+                        height: 300px;
+                        width: 100%;
+                    }
+                }
+                .alumni-info{
+                    padding: 10px 15px;
+                    line-height: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    a{
+                        display: inline-block;
+                    }
+                }
+            }
         }
     }
 }
@@ -318,11 +340,21 @@ nav {
                         }
                     }
                 }
-                .note {
-                    padding: 10px;
-                    margin-bottom: 20px;
-                    border: 1px solid #e9ecef;
-                    border-left: 3px solid #5bc0de;
+           
+                .alumni-wrapper{
+                    display: grid;
+                    grid-template-columns: 100%;
+                    // gap: 15px;
+                    .picture{
+                        img{
+                            height: 300px;
+                            width: 100%;
+                        }
+                    }
+                    .alumni-info{
+                        padding: 10px 15px 10px 15px;
+                        line-height: 1.5rem;
+                    }
                 }
             }
         }

@@ -37,7 +37,7 @@ componentTriggers.forEach(function (li) {
         document.querySelector(`.${target}`).style.display = "block";//target componentni yoqdi
 
         // media uchun : accordion-body ni o'chiradi
-        if (screen.width < 576) {
+        if (screen.width < 768) {
             document.querySelector(".accordion").style.transform = "scale(0)";
         }
     })
