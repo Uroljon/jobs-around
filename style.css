@@ -71,7 +71,8 @@ nav a {
   color: black;
 }
 
-#accordion-media-opener, #accordion-media-closer {
+#accordion-media-opener,
+#accordion-media-closer {
   display: none;
 }
 
@@ -158,21 +159,31 @@ nav a {
   color: cornsilk;
 }
 
-@media (min-width: 10px) and (max-width: 768px) {
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
   .container {
     width: 540px;
   }
-
+}
+@media (min-width: 10px) and (max-width: 768px) {
+  nav {
+    width: 100vw;
+  }
   nav .navbar-wrapper {
     padding: 10px 0;
   }
-  nav .navbar-wrapper .navbar-nav {
+  nav .navbar-wrapper .navbar-middle {
     display: none;
   }
 
   #main .main-wrapper {
     padding: 30px 0;
     grid-template-columns: 1fr;
+    width: 100%;
   }
   #main .main-wrapper .main-left .accordion {
     transform: scale(0);
@@ -221,7 +232,7 @@ nav a {
   #main .main-wrapper .main-left #accordion-media-closer {
     display: block;
     position: absolute;
-    bottom: 0%;
+    bottom: 7%;
     left: 50%;
     padding: 5%;
     transform: translateX(-50%);
