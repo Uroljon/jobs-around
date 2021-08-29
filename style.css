@@ -71,16 +71,20 @@ nav a {
   color: black;
 }
 
+#accordion-media-opener, #accordion-media-closer {
+  display: none;
+}
+
 #main .main-wrapper {
   padding: 40px 0;
   display: grid;
   grid-template-columns: 20% 1fr;
 }
 #main .main-wrapper .main-right .component-content {
+  width: 100%;
   padding: 15px;
   margin-bottom: 15px;
   box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.26);
-  background-size: cover;
   display: none;
 }
 #main .main-wrapper .main-right .component-content .images {
@@ -96,6 +100,7 @@ nav a {
   margin: 7px 0;
 }
 #main .main-wrapper .main-right .component-content .description {
+  width: 100%;
   padding: 0px 0px 10px 0px;
   line-height: 1.5rem;
 }
@@ -132,6 +137,9 @@ nav a {
   background-color: whitesmoke;
   font-weight: 600;
 }
+.accordion .accordion-item .accordion-item-toggler i {
+  pointer-events: none;
+}
 .accordion .accordion-item .accordion-body {
   overflow: hidden;
   transition: max-height 0.3s ease-out;
@@ -150,9 +158,116 @@ nav a {
   color: cornsilk;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 10px) and (max-width: 768px) {
   .container {
     width: 540px;
+  }
+
+  nav .navbar-wrapper {
+    padding: 10px 0;
+  }
+  nav .navbar-wrapper .navbar-nav {
+    display: none;
+  }
+
+  #main .main-wrapper {
+    padding: 30px 0;
+    grid-template-columns: 1fr;
+  }
+  #main .main-wrapper .main-left .accordion {
+    transform: scale(0);
+    transition: 300ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.911);
+    color: white;
+  }
+  #main .main-wrapper .main-left .accordion .accordion-item .accordion-item-toggler {
+    width: 90%;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    padding: 5px;
+    color: white;
+  }
+  #main .main-wrapper .main-left .accordion .accordion-item .accordion-item-toggler:hover, #main .main-wrapper .main-left .accordion .accordion-item .accordion-item-toggler:focus {
+    background-color: #dbdbdb;
+    color: #08404e;
+  }
+  #main .main-wrapper .main-left .accordion .accordion-item .accordion-body li {
+    width: 80%;
+    display: block;
+    padding: 5px;
+    margin: 2px auto;
+  }
+  #main .main-wrapper .main-left .accordion .accordion-item .accordion-body li:hover {
+    background-color: #227174;
+  }
+  #main .main-wrapper .main-left .accordion .accordion-item .accordion-body li.active {
+    background-color: #104a4d;
+    color: cornsilk;
+  }
+  #main .main-wrapper .main-left #accordion-media-opener {
+    font-size: 1rem;
+    display: block;
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  #main .main-wrapper .main-left #accordion-media-closer {
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    padding: 5%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  #main .main-wrapper .main-right .component-content {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.26);
+    display: none;
+  }
+  #main .main-wrapper .main-right .component-content .images {
+    width: 100%;
+    padding: 10px 0;
+  }
+  #main .main-wrapper .main-right .component-content .component-heading {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  #main .main-wrapper .main-right .component-content .component-subheading {
+    font-size: 1.5rem;
+    margin: 7px 0;
+  }
+  #main .main-wrapper .main-right .component-content .description {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    line-height: 1.5rem;
+  }
+  #main .main-wrapper .main-right .component-content .description ul {
+    list-style-type: disc;
+    padding-left: 5%;
+  }
+  #main .main-wrapper .main-right .component-content .description a {
+    display: inline-block;
+    margin: 5px 5px 0 0;
+  }
+  #main .main-wrapper .main-right .component-content .description a img {
+    height: 80px;
+  }
+  #main .main-wrapper .main-right .component-content .note {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;
+    border-left: 3px solid #5bc0de;
   }
 }
 @media (min-width: 768px) {

@@ -35,6 +35,20 @@ componentTriggers.forEach(function (li) {
             otherComponent.style.display = "none";//noshqa componentlarni o'chirdi
         });
         document.querySelector(`.${target}`).style.display = "block";//target componentni yoqdi
+
+        // media uchun : accordion-body ni o'chiradi
+        document.querySelector(".accordion").style.transform = "scale(0)";
+
     })
 })
 
+// accordion button for SM media
+
+let acordion_media_open = document.querySelector("#accordion-media-opener");
+acordion_media_open.addEventListener("click", () => {
+    document.querySelector(".accordion").style.transform = "scale(1)";
+})
+// accordion-media-closer
+document.querySelector("#accordion-media-closer").addEventListener("click", () => {
+    document.querySelector(".accordion").style.transform = "scale(0)";
+})
