@@ -88,6 +88,9 @@ nav {
 // MAIN CONTENT
 #main .main-wrapper {
     padding: 40px 0;
+    // vaqtincha
+    // display: none;
+    // vaqtincha
     display: grid;
     grid-template-columns: 20% 1fr;
 
@@ -137,25 +140,25 @@ nav {
                 border: 1px solid #e9ecef;
                 border-left: 3px solid #5bc0de;
             }
-            .alumni-wrapper{
+            .alumni-wrapper {
                 width: 100%;
                 display: grid;
                 grid-template-columns: 50% 50%;
                 // gap: 15px;
-                .picture{
+                .picture {
                     padding: 10px 0;
-                    img{
+                    img {
                         height: 300px;
                         width: 100%;
                     }
                 }
-                .alumni-info{
+                .alumni-info {
                     padding: 10px 15px;
                     line-height: 1.5rem;
                     display: flex;
                     align-items: center;
                     flex-direction: column;
-                    a{
+                    a {
                         display: inline-block;
                     }
                 }
@@ -208,10 +211,79 @@ nav {
     }
 }
 
+// AI test
+#AI_test {
+    width: 100%;
+    height: auto;
+    // vaqtincha
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.678);
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    .AI_form {
+        // vaqtincha
+        // display: none;
+        width: 100%;
+        background-color: whitesmoke;
+        padding: 3% 10%;
+        #variantlar {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 10px 30px;
+            overflow: hidden;
+
+            li {
+                img {
+                    width: 100%;
+                    height: 200px;
+                    cursor: pointer;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+    #natija{
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // height: 100vh;
+        padding: 5% 0;
+        position: relative;
+        #natija_nomi{
+            padding: 15px 0;
+        }
+        #natija_rasmi{
+            width: 50%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        #natija_matni{
+            padding: 3% ;
+        }
+        #closeResult{
+            position: absolute;
+            right: 3%;
+            top: 3%;
+            border: none;
+            background-color: unset;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 2%;
+        }
+    }
+}
 // media
 // extra small
 @media (max-width: 576px) {
-    .container{
+    .container {
         width: 100%;
     }
 }
@@ -223,7 +295,7 @@ nav {
 }
 @media (min-width: 10px) and (max-width: 768px) {
     //min-width: 576px emas
-   
+
     // navbar
     nav {
         width: 100vw;
@@ -233,7 +305,6 @@ nav {
             .navbar-middle {
                 display: none;
             }
-          
         }
     }
     // MAIN CONTENT
@@ -342,18 +413,18 @@ nav {
                         }
                     }
                 }
-           
-                .alumni-wrapper{
+
+                .alumni-wrapper {
                     display: grid;
                     grid-template-columns: 100%;
                     // gap: 15px;
-                    .picture{
-                        img{
+                    .picture {
+                        img {
                             height: 300px;
                             width: 100%;
                         }
                     }
-                    .alumni-info{
+                    .alumni-info {
                         padding: 10px 15px 10px 15px;
                         line-height: 1.5rem;
                     }

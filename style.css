@@ -182,6 +182,71 @@ nav a {
   color: cornsilk;
 }
 
+#AI_test {
+  width: 100%;
+  height: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.678);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+#AI_test .AI_form {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 3% 10%;
+}
+#AI_test .AI_form #variantlar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px 30px;
+  overflow: hidden;
+}
+#AI_test .AI_form #variantlar li img {
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#AI_test #natija {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 0;
+  position: relative;
+}
+#AI_test #natija #natija_nomi {
+  padding: 15px 0;
+}
+#AI_test #natija #natija_rasmi {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+#AI_test #natija #natija_matni {
+  padding: 3%;
+}
+#AI_test #natija #closeResult {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  border: none;
+  background-color: unset;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 2%;
+}
+
 @media (max-width: 576px) {
   .container {
     width: 100%;
